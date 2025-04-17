@@ -26,7 +26,7 @@ namespace GurjarDairyFarm.Web.Controllers
                 };
 
                 // Pass the model to the view
-                return View("~/Views/Carousel/Index.cshtml", model);
+                return View("~/Views/GurjarFarm/Carousel/Index.cshtml", model);
             }
         }
     }

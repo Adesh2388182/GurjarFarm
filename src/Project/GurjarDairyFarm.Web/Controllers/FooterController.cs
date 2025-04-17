@@ -13,7 +13,7 @@ namespace GurjarDairyFarm.Web.Controllers
                 CopyrightText = "© 2025 Gurjar Dairy Farm. All rights reserved.",
                 SocialMediaLinks = new List<string> { "Facebook", "Twitter", "Instagram" }
             };
-            return View("~/Views/Footer/Index.cshtml", model);
+            return View("~/Views/GurjarFarm/Footer/Index.cshtml", model);
         }
     }
 }

@@ -1,0 +1,21 @@
+﻿@model GurjarDairyFarm.Web.Models.FooterModel
+    <div class="container">
+        <div class="row">
+            <!-- Copyright Section -->
+            <div class="col-md-6">
+                <p class="mb-0">@Model.CopyrightText</p>
+            </div>
+
+            <!-- Social Media Links Section -->
+            <div class="col-md-6 text-md-right">
+                <ul class="list-inline mb-0">
+                    @foreach (var link in Model.SocialMediaLinks)
+                    {
+                        <li class="list-inline-item">
+                            <a href="@link" class="text-white">@link</a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>

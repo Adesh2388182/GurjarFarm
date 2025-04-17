@@ -45,7 +45,7 @@ namespace GurjarDairyFarm.Web.Controllers
                 }
             };
 
-            return View("~/Views/Header/Index.cshtml", model);
+            return View("~/Views/GurjarFarm/Header/Index.cshtml", model);
         }
     }
 }
