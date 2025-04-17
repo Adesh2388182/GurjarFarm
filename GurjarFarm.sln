@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{7F7A30CB-985D-4166-8545-1143D9F4904E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{0B9038F7-B0EA-4F94-8EB3-3CBF04002653}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GurjarDairyFarm.Web", "src\Project\GurjarDairyFarm.Web\GurjarDairyFarm.Web.csproj", "{339EADA4-50BD-4657-85C2-00EDF9A46BA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{339EADA4-50BD-4657-85C2-00EDF9A46BA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{339EADA4-50BD-4657-85C2-00EDF9A46BA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{339EADA4-50BD-4657-85C2-00EDF9A46BA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{339EADA4-50BD-4657-85C2-00EDF9A46BA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{339EADA4-50BD-4657-85C2-00EDF9A46BA6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E365CE45-F60F-4D5E-90F9-379BD264F22C}
+	EndGlobalSection
+EndGlobal
