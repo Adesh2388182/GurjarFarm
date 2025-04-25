@@ -1,27 +1,25 @@
-﻿@model GurjarDairyFarm.Web.Models.CarouselModel
-<div id="homepageCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        @for (int i = 0; i < Model.Images.Count; i++)
-        {
-            <li data-target="#homepageCarousel" data-slide-to="@i" class="@(i == 0 ? "active" : "")"></li>
-        }
-    </ol>
+﻿@model IEnumerable<YourNamespace.Models.Product>
+
+<div id="product-carousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-        @for (int i = 0; i < Model.Images.Count; i++)
+        @foreach (var product in Model)
         {
-            <div class="carousel-item @(i == 0 ? "active" : "")">
-                <img src="@Model.Images[i].ImageUrl" class="d-block w-100" alt="@Model.Images[i].AltText">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>@Model.Captions[i]</h5>
-                </div>
+        <div class="carousel-item @(Model.First() == product ? "active" : "")">
+            <img src="@product.ImageUrl" class="d-block w-100" alt="@product.Title">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>@product.Title</h5>
+                <p>@product.Description</p>
+                <p>Price: @product.Price</p>
+                <p>Available: @(product.Availability ? "Yes" : "No")</p>
             </div>
+        </div>
         }
     </div>
-    <a class="carousel-control-prev" href="#homepageCarousel" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#product-carousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#homepageCarousel" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#product-carousel" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
